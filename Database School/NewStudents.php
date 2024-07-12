@@ -1,5 +1,5 @@
 <!Doctype html>
-<html>
+<html lang="English">
 
     <head>
 	    <title> Insert Students </title>
@@ -16,7 +16,7 @@
 
     <fieldset style="width:30%; margin-left:470px; background-color: whitesmoke; border-color:yellow; border-radius:30px;">
 
-	    <legend  style="margin-left:26.5%;"> INSERISCI STUDENTE </legend>
+	    <legend  style="margin-left:26.5%;"> INSERT STUDENT </legend>
 
 		<label for="nome"> Nome <b style="color:red;"> * </b> </label>
 		    <input style="margin-left:32px;" type="text" name="nome" id="nome" placeholder="inserisci il nome.." required />
