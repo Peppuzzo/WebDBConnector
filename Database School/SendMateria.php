@@ -2,7 +2,7 @@
 
 $materia = $_POST['materia'];
 
-$open = mysqli_connect("localhost", "root", "", "database Scuola");
+$open = mysqli_connect("localhost", "root", "", "DatabaseScuola");
 
 if ($open === false){
 

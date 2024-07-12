@@ -8,7 +8,7 @@ echo "<head> <title> RecuperaPreferenza </title> </head>";
 
 echo "<body style=\"background-color: #b0c4de\">"; //#b0c4de
 
-$conn = mysqli_connect("localhost", "root", "", "database Scuola");
+$conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
 
 if (mysqli_connect_errno()){
 

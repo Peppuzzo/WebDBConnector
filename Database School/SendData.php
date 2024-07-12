@@ -5,7 +5,7 @@ $cognome = $_POST['cognome'];
 $eta = $_POST['eta'];
 $citta = $_POST['citta'];
 
-$conn = mysqli_connect("localhost", "root", "", "database Scuola");
+$conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
 
 if (mysqli_connect_errno()){
 

@@ -3,7 +3,7 @@
 $materia = $_POST['id_materia'];
 $studente = $_POST['id_studente'];
 
-$conn = mysqli_connect("localhost", "root", "", "Database Scuola");
+$conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
 
 if (false === $conn){
 
