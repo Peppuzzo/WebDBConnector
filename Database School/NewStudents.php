@@ -46,27 +46,27 @@
 	    <legend  style="margin-left:26.5%;"> INSERT STUDENT </legend>
 
 		<label for="nome"> Nome <b style="color:red;"> * </b> </label>
-		    <input style="margin-left:32px;" type="text" name="nome" id="nome" placeholder="inserisci il nome.." required />
+		    <input style="margin-left:32px;" type="text" name="nome" id="nome" placeholder="enter your name.." required />
 
 	<br>
 
-	    <label for="cognome"> Cognome <b style="color:red;"> * </b> </label>
-		    <input style="margin-left:7px;" type="text" name="cognome" id="cognome" placeholder="Inserisci il cognome.." required />
+	    <label for="cognome"> Surname <b style="color:red;"> * </b> </label>
+		    <input style="margin-left:7px;" type="text" name="cognome" id="cognome" placeholder="enter your surname.." required />
 
 	<br>
 
 	    <label for="eta"> Età <b style="color:red;"> * </b> </label>
-		    <input style="margin-left:48px;" type="number" name="eta" id="eta" min="1" max="120" placeholder="età" required />
+		    <input style="margin-left:48px;" type="number" name="eta" id="eta" min="1" max="120" placeholder="age" required />
 
     <br>
 
-	    <label for="citta"> Città <b style="color:red;"> * </b> </label>
-		    <input style="margin-left:37px;" type="text" name="citta" id="citta"  placeholder="inserisci la città.." required />
+	    <label for="citta"> City <b style="color:red;"> * </b> </label>
+		    <input style="margin-left:37px;" type="text" name="citta" id="citta"  placeholder="enter your city.." required />
 
     <br>
 
 
-	<h5 style="color:red"> <u>Tutti i campi sono obbligatori!</u> </h5>
+	<h5 style="color:red"> <u>All fields are mandatory!</u> </h5>
 
 	            <input type="submit" value="invia" name="conferma" />
 	            <input type="reset" value="cancella" />

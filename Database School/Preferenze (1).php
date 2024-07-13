@@ -24,13 +24,13 @@
  */
 
 
-echo "<title> Preferenze </title>";
+echo "<title> Preference </title>";
 
 $conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
 
 if(false === $conn){
 
-  echo "Errore di connessione.";
+  echo "Connection error.";
 }
 
 $query = "SELECT id, nomeMateria FROM materia;";
@@ -45,13 +45,13 @@ mysqli_close($conn);
 
 //************************************************//
 
-echo "<h2> Seleziona le preferenze </h2>";
+echo "<h2> Select your preferences </h2>";
 
 echo "<form action=\"SendPreferenza.php\" method=\"post\">";
 
     echo "<fieldset>";
 
-	    echo "<legend> fai le corrette associazioni" . "</legend>";
+	    echo "<legend> make the correct associations" . "</legend>";
 
 	        echo "<label for=\"materia\"> Scegli una materia" . "</label>";
 
@@ -86,7 +86,7 @@ echo "<form action=\"SendPreferenza.php\" method=\"post\">";
 
 			echo "</select>" . " ";
 
-	echo "<a href=\"NewStudents.php\"> Inserisci un nuovo studente" . "</a>";
+	echo "<a href=\"NewStudents.php\"> Insert a new student" . "</a>";
 
 	    echo "<br><br>";
 

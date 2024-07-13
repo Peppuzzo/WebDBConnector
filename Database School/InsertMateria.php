@@ -36,10 +36,10 @@ echo "<form action=\"SendMateria.php\" method=\"post\">";
 
 	echo "<br>";
 
-	   echo "<legend style=\"margin-left:33%;\" for=\"materia\"> <b>INSERISCI MATERIA</b>" . "</legend>";
+	   echo "<legend style=\"margin-left:33%;\" for=\"materia\"> <b>INSERT SUBJECT</b>" . "</legend>";
 
 		    echo "<label style=\"margin-left:5%;\" for=\"materia\"> <b style=\"color:#20B2AA\">Materia </b> <b style=\"color:red;\"> * </b>" . "</label>";
-			    echo "<input type=\"text\" name=\"materia\" id=\"materia\" placeholder=\"inserisci la materia..\" />" . "<br>" . "<br>";
+			    echo "<input type=\"text\" name=\"materia\" id=\"materia\" placeholder=\"insert the subject..\" />" . "<br>" . "<br>";
 
 	    echo "<input style=\"margin-left:5%;\" type=\"submit\" value=\"invia materia\"/>";
 
