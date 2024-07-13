@@ -49,13 +49,6 @@ echo "<form action=\"SendMateria.php\" method=\"post\">";
 echo "</fieldset>";
 
 
-
 echo "</form>";
 
 echo "</body>";
-
-?>
-
-
-
-

@@ -26,12 +26,15 @@
 
 echo "<title> Preference </title>";
 
+/**
+ * Connection to the database
+ */
+
 $conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
 
-if(false === $conn){
-
+if(false === $conn)
   echo "Connection error.";
-}
+
 
 $query = "SELECT id, nomeMateria FROM materia;";
 
@@ -39,11 +42,14 @@ $result = mysqli_query($conn, $query);
 
 $query2 = "SELECT id, nome, cognome FROM anagrafica;";
 
+/**
+ * @var mysqli_result|bool $students Result of the query execution.
+ */
+
 $students = mysqli_query($conn, $query2);
 
 mysqli_close($conn);
 
-//************************************************//
 
 echo "<h2> Select your preferences </h2>";
 
@@ -55,14 +61,15 @@ echo "<form action=\"SendPreferenza.php\" method=\"post\">";
 
 	        echo "<label for=\"materia\"> Scegli una materia" . "</label>";
 
+          /**
+           * @var array $value Array containing the result of the query.
+           */
+
 			    echo "<select name=\"id_materia\" id=\"materia\">";
 
 				    while($value = mysqli_fetch_array($result)){
 
               echo "<option value=".$value['id'].">" . $value['nomeMateria'] . "</option>";
-
-              //"<option value=\"$value['id']\">" . $value['nome'] . "</option>";
-
             }
 
 				echo "</select>" . " ";
@@ -81,7 +88,6 @@ echo "<form action=\"SendPreferenza.php\" method=\"post\">";
 
             echo "<option value=".$valueTwo['id'].">" . $valueTwo['nome'] . " " . $valueTwo['cognome'] . "</option>";
 
-            //"<option value=\"$valueTwo['id']\">" . $value['nome'] . "</option>";
           }
 
 			echo "</select>" . " ";
@@ -106,5 +112,3 @@ echo "<input type=\"submit\" value=\"recupera\">";
 
 
 echo "</form>";
-
-?>

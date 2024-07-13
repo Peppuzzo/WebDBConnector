@@ -28,29 +28,26 @@ $studente = $_POST['id_studente'];
 
 $conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
 
-if (false === $conn){
+if (false === $conn)
+  echo "Error: Connection not made!" . mysqli_error();
 
-	echo "Errore: Connessione non effettuata!" . mysqli_error();
-}
+else
+  echo "<h2 style=\"color:green;\" > Database connection made! </h2>";
 
-else {
-
-	echo "<h2 style=\"color:green;\" >Connessione al database effettuata! </h2>";
-}
 
 echo "<br>";
 
-echo "Preferenza inserita correttamente.";
+echo "Preference entered correctly.";
 
 
 $insert = "INSERT INTO preferenza(id_studente, id_materia) VALUES('$studente', '$materia')";
 
-mysqli_query($conn, $insert) or die ("Query non eseguita!");
+/**
+ * @var mysqli_result|bool $result Result of the query execution.
+ */
+mysqli_query($conn, $insert) or die ("Query not executed!");
 
+/**
+ * Close the connection to the database.
+ */
 mysqli_close($conn);
-
-
-?>
-
-
-
