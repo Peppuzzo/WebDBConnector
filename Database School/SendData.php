@@ -24,6 +24,7 @@
  */
 
 /**
+ * Parameters for entering data into the Database
  * @var string $nome Name of the student.
  * @var string $cognome Surname of the student.
  * @var int $age Age of the student.
