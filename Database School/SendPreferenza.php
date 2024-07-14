@@ -23,6 +23,11 @@
  * SOFTWARE.
  */
 
+/**
+ * @var int $materia ID of the subject.
+ * @var int $studente ID of the student.
+ */
+
 $materia = $_POST['id_materia'];
 $studente = $_POST['id_studente'];
 
