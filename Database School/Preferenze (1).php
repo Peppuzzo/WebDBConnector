@@ -27,7 +27,7 @@
 echo "<title> Preference </title>";
 
 /**
- * Connection to the database
+ * Connection to the database.
  */
 
 $conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
