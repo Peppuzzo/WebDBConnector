@@ -41,11 +41,11 @@ if(false === $conn)
   echo "Connection error.";
 
 
-$query = "SELECT ID, Name AS subject_name FROM subject;";
+$query = "SELECT ID AS ID_Subject, Name AS subject_name FROM subject;";
 
 $result = mysqli_query($conn, $query);
 
-$query2 = "SELECT ID, Name AS student_name, Surname FROM student;";
+$query2 = "SELECT ID AS ID_Student, Name AS student_name, Surname FROM student;";
 
 /**
  * @var mysqli_result|bool $students Result of the query execution.
@@ -74,7 +74,7 @@ echo "<form action=\"SendPreferenza.php\" method=\"post\">";
 
 				    while($value = mysqli_fetch_array($result)){
 
-              echo "<option value=".$value['ID'].">" . $value['subject_name'] . "</option>";
+              echo "<option value=".$value['ID_Subject'].">" . $value['subject_name'] . "</option>";
             }
 
 				echo "</select>" . " ";
@@ -91,7 +91,7 @@ echo "<form action=\"SendPreferenza.php\" method=\"post\">";
 
 			    while($valueTwo = mysqli_fetch_array($students)){
 
-            echo "<option value=".$valueTwo['ID'].">" . $valueTwo['student_name'] . " " . $valueTwo['Surname'] . "</option>";
+            echo "<option value=".$valueTwo['ID_Student'].">" . $valueTwo['student_name'] . " " . $valueTwo['Surname'] . "</option>";
 
           }
 
