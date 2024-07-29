@@ -57,7 +57,7 @@ else
 echo "The data has been entered correctly." . "<br>";
 echo "You have added the following student: " . "<b>$nome</b>" . "<b>$cognome</b>";
 
-$Student = "INSERT INTO anagrafica(nome, cognome, eta, citta) VALUES ('$nome', '$cognome', '$eta', '$citta')" or die ("Error: Query not executed." . "<br>");
+$Student = "INSERT INTO student(Name, Surname, Age, City) VALUES ('$nome', '$cognome', '$eta', '$citta')" or die ("Error: Query not executed." . "<br>");
 
 mysqli_query($conn, $Student) or die ("The data has not been entered");
 
