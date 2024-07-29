@@ -38,7 +38,7 @@ $materia = $_POST['materia'];
 /**
  * Connection to the database
  */
-$open = mysqli_connect("localhost", "root", "", "WeDbConnector");
+$open = mysqli_connect("localhost", "root", "", "WebDbConnector");
 
 if ($open === false)
   exit("Error with database connection.") . mysqli_error($open);
