@@ -52,7 +52,7 @@ echo "The following subject has been included: " . "<b>$materia</b>";
 /**
  * SQL query to insert the subject.
  */
-$insert = "INSERT INTO materia(Name) VALUES('$materia')";
+$insert = "INSERT INTO subject(Name) VALUES('$materia')";
 
 echo "<br>";
 
