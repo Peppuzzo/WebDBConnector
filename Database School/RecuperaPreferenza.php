@@ -39,7 +39,7 @@ echo "<body style=\"background-color: #b0c4de\">";
 /**
  * @var mysqli $conn Database connection object.
  */
-$conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
+$conn = mysqli_connect("localhost", "root", "", "webdbconnector");
 
 
 if (mysqli_connect_errno())

@@ -36,7 +36,7 @@
 $materia = $_POST['id_materia'];
 $studente = $_POST['id_studente'];
 
-$conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
+$conn = mysqli_connect("localhost", "root", "", "webdbconnector");
 
 if (false === $conn)
   echo "Error: Connection not made!" . mysqli_error();

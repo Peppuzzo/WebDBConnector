@@ -45,7 +45,7 @@ $citta = $_POST['citta'];
  * Connection to the database
  */
 
-$conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
+$conn = mysqli_connect("localhost", "root", "", "webdbconnector");
 
 if (mysqli_connect_errno())
   die("Error: Connection failed." . mysqli_error($conn));

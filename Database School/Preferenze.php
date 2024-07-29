@@ -35,7 +35,7 @@ echo "<title> Preference </title>";
  * Connection to the database.
  */
 
-$conn = mysqli_connect("localhost", "root", "", "DatabaseScuola");
+$conn = mysqli_connect("localhost", "root", "", "webdbconnector");
 
 if(false === $conn)
   echo "Connection error.";
