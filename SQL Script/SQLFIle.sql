@@ -8,7 +8,7 @@
 -- Create database
 CREATE DATABASE WebDBConnector;
 
-USE DatabaseScuola;
+USE WebDBConnector;
 
 -- Check if the 'Student' table already exists
 DROP TABLE IF EXISTS Student;
