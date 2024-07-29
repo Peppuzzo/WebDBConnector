@@ -39,7 +39,7 @@ echo "<body style=\"background-color: #b0c4de\">";
 /**
  * @var mysqli $conn Database connection object.
  */
-$conn = mysqli_connect("localhost", "root", "", "webdbconnector");
+$conn = mysqli_connect("localhost", "root", "", "WebDBConenctor");
 
 
 if (mysqli_connect_errno())
@@ -48,7 +48,7 @@ if (mysqli_connect_errno())
 /**
  * SQL query to retrieve preferences.
  */
-$preference = "SELECT A.id, A.nome, A.cognome, M.nomeMateria FROM anagrafica A, materia M, preferenza F WHERE A.id = F.id_studente AND M.id = F.id_materia;";
+$preference = "SELECT STU.ID AS ID_student, STU.Name AS Name_Student, STU.Surname AS Surname_Student, S.Name AS Name_Subject FROM student STU, subject S, preference F WHERE STU.ID = F.id_Student AND S.ID = F.id_Subject;";
 
 
 /**
@@ -77,10 +77,10 @@ echo "<table style=\"border-color: black; margin-left:490px;\" >";
 
 	echo "<tr>";
 
-		echo "<td style='background-color:whitesmoke;'>" . $values['id'] . "</td>";
-		echo "<td style='background-color:whitesmoke;'>" . $values['nome'] . "</td>";
-		echo "<td style='background-color:whitesmoke;'>" . $values['cognome'] . "</td>";
-		echo "<td style='background-color:whitesmoke;'>" . $values['nomeMateria'] . "</td>";
+		echo "<td style='background-color:whitesmoke;'>" . $values['ID_student'] . "</td>";
+		echo "<td style='background-color:whitesmoke;'>" . $values['Name_Student'] . "</td>";
+		echo "<td style='background-color:whitesmoke;'>" . $values['Surname_Student'] . "</td>";
+		echo "<td style='background-color:whitesmoke;'>" . $values['Name_Subject'] . "</td>";
 
 
 	echo "</tr>";
