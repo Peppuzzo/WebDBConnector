@@ -23,6 +23,11 @@
  * SOFTWARE.
  */
 
+/**
+ * @author Giuseppe Calarese
+ * @version 1.0
+ */
+
 
 /**
  * @var string $materia Name of the subject.

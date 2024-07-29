@@ -24,6 +24,11 @@
  */
 
 /**
+ * @author Giuseppe Calarese
+ * @version 1.0
+ */
+
+/**
  * @var int $materia ID of the subject.
  * @var int $studente ID of the student.
  */

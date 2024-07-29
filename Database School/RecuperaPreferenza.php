@@ -23,6 +23,11 @@
  * SOFTWARE.
  */
 
+/**
+ * @author Giuseppe Calarese
+ * @version 1.0
+ */
+
 echo "<!DOCTYPE html>";
 
 echo "<html lang=\"en\">";

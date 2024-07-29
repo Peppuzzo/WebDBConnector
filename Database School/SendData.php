@@ -24,6 +24,11 @@
  */
 
 /**
+ * @author Giuseppe Calarese
+ * @version 1.0
+ */
+
+/**
  * Parameters for entering data into the Database
  * @var string $nome Name of the student.
  * @var string $cognome Surname of the student.

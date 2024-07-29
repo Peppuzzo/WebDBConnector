@@ -23,6 +23,11 @@
  * SOFTWARE.
  */
 
+/**
+ * @author Giuseppe Calarese
+ * @version 1.0
+ */
+
 
 echo "<title> Preference </title>";
 
