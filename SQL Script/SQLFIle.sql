@@ -1,8 +1,8 @@
 /*
 	Script the repository WebDBConnector -> https://github.com/Peppuzzo/WebDBConnector
-	Autor: Giuseppe Calabrese
-	Tabelle interessate : Student, Subject, Preference
-    Last modify: 10/07/2024
+	Author: Giuseppe Calabrese
+	Interesting table : Student, Subject, Preference
+  Last modify: 10/07/2024
 */
 
 -- Create database
