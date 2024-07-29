@@ -1,4 +1,4 @@
-/* 
+/*
 	Script the repository WebDBConnector -> https://github.com/Peppuzzo/WebDBConnector
 	Autor: Giuseppe Calabrese
 	Tabelle interessate : Student, Subject, Preference
@@ -6,7 +6,7 @@
 */
 
 -- Create database
-CREATE DATABASE DatabaseScuola;
+CREATE DATABASE WebDBConnector;
 
 USE DatabaseScuola;
 
@@ -46,7 +46,7 @@ foreign key (Id_Subject) references Subject(ID)
 
 -- Insertion of occurrences on the table Student:
 
-INSERT INTO Student(Name, Surname, Age, City) VALUES 
+INSERT INTO Student(Name, Surname, Age, City) VALUES
 	("Giuseppe", "calabrese", 23, "Palermo"),
     ("Mario", "Rossi", 34, "Milano"),
     ("Spongebob", "Squarepants", 29, "Bikini Bottom"),
@@ -59,7 +59,7 @@ INSERT INTO Student(Name, Surname, Age, City) VALUES
 
 -- Insertion of occurrences on the table Student:
 
-INSERT INTO Subject(Name) VALUES 
+INSERT INTO Subject(Name) VALUES
 	("Programming"),
     ("Algorithms and data structures"),
     ("Fundamentals of computer science"),
@@ -70,26 +70,26 @@ INSERT INTO Subject(Name) VALUES
     ("Biology"),
     ("Physics"),
     ("Chemistry");
-    
-    
+
+
 -- Insertion of occurrences on the table Preference:
 
 INSERT INTO Preference (Id_Student, Id_Subject) VALUES
-    (1, 1), 
-    (1, 5), 
-    (2, 2), 
-    (2, 6), 
-    (3, 3), 
-    (3, 8), 
-    (4, 4), 
-    (4, 9), 
-    (5, 10), 
-    (5, 7), 
-    (6, 7), 
-    (7, 8), 
-    (7, 3), 
-    (8, 9), 
-    (8, 6); 
+    (1, 1),
+    (1, 5),
+    (2, 2),
+    (2, 6),
+    (3, 3),
+    (3, 8),
+    (4, 4),
+    (4, 9),
+    (5, 10),
+    (5, 7),
+    (6, 7),
+    (7, 8),
+    (7, 3),
+    (8, 9),
+    (8, 6);
 
 
 
