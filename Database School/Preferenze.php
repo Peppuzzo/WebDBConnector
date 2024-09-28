@@ -43,7 +43,7 @@ if(false === $conn)
 
 $query = "SELECT ID AS ID_Subject, Name AS subject_name FROM subject;";
 
-$result = mysqli_query($conn, $query);
+$materia = mysqli_query($conn, $query);
 
 $query2 = "SELECT ID AS ID_Student, Name AS student_name, Surname FROM student;";
 
@@ -51,7 +51,7 @@ $query2 = "SELECT ID AS ID_Student, Name AS student_name, Surname FROM student;"
  * @var mysqli_result|bool $students Result of the query execution.
  */
 
-$students = mysqli_query($conn, $query2);
+$studente = mysqli_query($conn, $query2);
 
 mysqli_close($conn);
 
@@ -72,7 +72,7 @@ echo "<form action=\"SendPreferenza.php\" method=\"post\">";
 
 			    echo "<select name=\"id_materia\" id=\"materia\">";
 
-				    while($value = mysqli_fetch_array($result)){
+				    while($value = mysqli_fetch_array($materia)){
 
               echo "<option value=".$value['ID_Subject'].">" . $value['subject_name'] . "</option>";
             }
@@ -89,7 +89,7 @@ echo "<form action=\"SendPreferenza.php\" method=\"post\">";
 
 		    echo "<select name=\"id_studente\" id=\"studente\">";
 
-			    while($valueTwo = mysqli_fetch_array($students)){
+			    while($valueTwo = mysqli_fetch_array($studente)){
 
             echo "<option value=".$valueTwo['ID_Student'].">" . $valueTwo['student_name'] . " " . $valueTwo['Surname'] . "</option>";
 

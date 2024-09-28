@@ -36,7 +36,7 @@
 $materia = $_POST['id_materia'];
 $studente = $_POST['id_studente'];
 
-$conn = mysqli_connect("localhost", "root", "", "webdbconnector");
+$conn = mysqli_connect("localhost", "root", "", "WebDbConnector");
 
 if (false === $conn)
   echo "Error: Connection not made!" . mysqli_error();
@@ -50,7 +50,7 @@ echo "<br>";
 echo "Preference entered correctly.";
 
 
-$insert = "INSERT INTO preferenza(id_studente, id_materia) VALUES('$studente', '$materia')";
+$insert = "INSERT INTO preference(Id_Student, Id_Subject) VALUES('$studente', '$materia')";
 
 /**
  * @var mysqli_result|bool $result Result of the query execution.

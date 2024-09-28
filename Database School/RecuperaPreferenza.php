@@ -48,7 +48,7 @@ if (mysqli_connect_errno())
 /**
  * SQL query to retrieve preferences.
  */
-$preference = "SELECT STU.ID AS ID_student, STU.Name AS Name_Student, STU.Surname AS Surname_Student, S.Name AS Name_Subject FROM student STU, subject S, preference F WHERE STU.ID = F.id_Student AND S.ID = F.id_Subject;";
+$preference = "SELECT STU.ID AS ID_student, STU.Name AS Name_Student, STU.Surname AS Surname_Student, S.Name AS Name_Subject FROM student STU, subject S, preference F WHERE STU.ID = F.Id_Student AND S.ID = F.Id_Subject;";
 
 
 /**
