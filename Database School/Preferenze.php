@@ -111,7 +111,7 @@ echo "</form>";
 
 
 
-echo "<form action=\"RecuperaPreferenza.php\" method''>";
+echo "<form action=\"RecuperaPreferenza.php\" method'post'>";
 
 echo "<input type=\"submit\" value=\"recupera\">";
 

@@ -33,7 +33,7 @@
  * @var int $studente ID of the student.
  */
 
-$materia = $_POST['id_materia'];
+$materia = $_POST['student_name'];
 $studente = $_POST['id_studente'];
 
 $conn = mysqli_connect("localhost", "root", "", "WebDbConnector");
@@ -55,7 +55,7 @@ $insert = "INSERT INTO preference(Id_Student, Id_Subject) VALUES('$studente', '$
 /**
  * @var mysqli_result|bool $result Result of the query execution.
  */
-mysqli_query($conn, $insert) or die ("Query not executed!");
+mysqli_query($conn, $insert) or die ("Query not executed1111!");
 
 /**
  * Close the connection to the database.
