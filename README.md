@@ -10,7 +10,7 @@ Questo progetto dimostra come un computer possa inviare dati a un database MySQL
 Di seguito è riportato un diagramma che rappresenta la comunicazione tra il computer, la pagina web e il database:
 
 <div align="center">
-  <img ![Uploading image.png…]()
+  
 />
 </div>
 
