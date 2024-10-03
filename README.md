@@ -1,4 +1,4 @@
-<h1 style="text-align: center"> # WebDBConnector (Repository work in progress!!) </h1>
+![image](https://github.com/user-attachments/assets/9001fd19-90f8-49ef-957e-6e28fab446bb)<h1 style="text-align: center"> # WebDBConnector (Repository work in progress!!) </h1>
 <!--This repository contains a class assignment assigned in 4th grade, the aim was to develop web pages (directly with file.php) that could interact with the user (via html pages) and connect to a database to be able to send/view the data. -->
 
 Questo progetto dimostra come un computer possa inviare dati a un database MySQL tramite una pagina web locale. L'obiettivo è creare un ambiente di sviluppo che simuli una connessione reale tra il frontend e il backend, con il database che gestisce i dati.
@@ -10,7 +10,8 @@ Questo progetto dimostra come un computer possa inviare dati a un database MySQL
 Di seguito è riportato un diagramma che rappresenta la comunicazione tra il computer, la pagina web e il database:
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x300?text=Computer+connects+to+Database+via+Webpage" alt="Connessione tra computer e database" width="600"/>
+  <img ![Uploading image.png…]()
+/>
 </div>
 
 - **Computer Locale**: Esegue la pagina web e invia/riceve dati dal database.
